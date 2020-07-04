@@ -15,4 +15,9 @@ urlpatterns = [
         views.SuscribersCreateView.as_view(),
         name='add-suscription',
     ),  
+    path(
+        'contact', 
+        views.ContactCreateView.as_view(),
+        name='add-contact',
+    ),  
 ]
