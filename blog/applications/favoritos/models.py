@@ -9,6 +9,8 @@ from model_utils.models import TimeStampedModel
 
 from applications.entrada.models import Entry
 
+from .managers import FavoritesManager
+
 # Create your models here.
 
 class Favorites(TimeStampedModel):
@@ -25,6 +27,8 @@ class Favorites(TimeStampedModel):
         related_name = 'entry_favorites',
         on_delete=models.CASCADE
     )    
+    
+    objects = FavoritesManager()
     
     class Meta:
         unique_together = ('user', 'entry')    
