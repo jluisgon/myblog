@@ -35,6 +35,8 @@ DJANGO_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # SEO Sitemap
+    'django.contrib.sitemaps',
 )
 
 LOCAL_APPS = (
